@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 class Page1ViewController : DataViewController {
     
             
     
     @IBOutlet weak var uiImageView: UIImageView!
-    
+    var audioPlayer:AVAudioPlayer?
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)
@@ -20,11 +21,17 @@ class Page1ViewController : DataViewController {
         {
             self.uiImageView.image = dataImage
         }
-        
+        playRecord()
     }
     func playRecord() {
         if dataRecord != nil {
-            
+            if let dataAudio = dataRecord?.record {
+                //nsdata -> audio
+                do {
+                    audioPlayer = try AVAudioPlayer(data: dataAudio as! Data ) as AVAudioPlayer
+                    audioPlayer?.play()
+                } catch {}
+            }
         }
     }
 }

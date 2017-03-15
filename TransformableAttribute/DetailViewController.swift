@@ -124,6 +124,9 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate, U
         audioRecorder.stop()
         if success {
             playRecordButton.isEnabled = true
+            do {
+                try recordingSession.setCategory(AVAudioSessionCategoryPlayback)
+            } catch {}
         } else {
             
         }
