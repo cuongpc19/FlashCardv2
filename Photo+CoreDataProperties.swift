@@ -8,7 +8,7 @@
 
 import Foundation
 import CoreData
-
+import UIKit
 
 extension Photo {
 
@@ -16,7 +16,7 @@ extension Photo {
         return NSFetchRequest<Photo>(entityName: "Photo");
     }
 
-    @NSManaged public var image: NSObject?
+    @NSManaged public var image: UIImage?
     @NSManaged public var event: Event?
 
 }
