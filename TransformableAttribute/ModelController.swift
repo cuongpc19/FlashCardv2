@@ -16,6 +16,7 @@ class ModelController: NSObject {
     override init() {
         super.init()
         fetchData()
+        NotificationCenter.default.addObserver(self, selector: #selector(ModelController.actOnSpecialNotification), name: NSNotification.Name(rawValue: mySpecialNotificationKey), object: nil)
     }
     
     func viewControllerAtIndex(_ index: Int, storyboard: UIStoryboard) -> DataViewController? { 
@@ -56,6 +57,10 @@ class ModelController: NSObject {
             let error as NSError {
                 print("Could not fetch \(error), \(error.userInfo)")
         }
+    }
+    //MARK: Notification
+    func actOnSpecialNotification() {
+        fetchData()
     }
     
 }

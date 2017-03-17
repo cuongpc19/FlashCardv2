@@ -9,9 +9,10 @@
 import UIKit
 import CoreData
 import AVFoundation
-
+ let mySpecialNotificationKey = "cuongpc"
 class DetailViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+   
     
     @IBOutlet weak var recordButton: UIButton!
     
@@ -62,6 +63,7 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate, U
         playRecordButton.isEnabled = false
         self.configureViewAndRecord()
         recordAudio()
+        NotificationCenter.default.addObserver(self, selector: #selector (DetailViewController.updateNotificationSentLabel), name: NSNotification.Name(rawValue:mySpecialNotificationKey), object: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -147,6 +149,7 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate, U
             //4
             do {
                 try managedContext?.save()
+                sendNotification()
                 //5
             } catch let error as NSError {
                 print("Could not save \(error), \(error.userInfo)")
@@ -202,8 +205,7 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate, U
         //4
         do {
             try managedContext?.save()
-            //5
-            //people.append(person)
+            sendNotification()
         } catch let error as NSError {
             print("Could not save \(error), \(error.userInfo)")
         }
@@ -225,6 +227,14 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
     func backAction() {
         dismiss(animated: true, completion: nil)
+    }
+    //MARK: Notification
+    func sendNotification() {
+        NotificationCenter.default.post(name: Notification.Name(rawValue: mySpecialNotificationKey), object: self)
+    }
+    
+    func updateNotificationSentLabel() {
+        
     }
 }
 
