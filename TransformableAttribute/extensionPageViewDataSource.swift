@@ -13,9 +13,9 @@ extension ModelController : UIPageViewControllerDataSource {
         if (index == 0) || (index == NSNotFound) {
             return nil
         }
-        print("currentIndex : \(index)")
+        //print("currentIndex : \(index)")
         index -= 1
-        print("index in function - \(index)")
+        //print("index in function - \(index)")
         return self.viewControllerAtIndex(index, storyboard: viewController.storyboard!)
     }
     
@@ -24,10 +24,10 @@ extension ModelController : UIPageViewControllerDataSource {
         if index == NSNotFound {
             return nil
         }
-        print("currentIndex : \(index)")
+        //print("currentIndex : \(index)")
         index += 1
         if index == self.pageData.count {
-            print("index in function + \(index) , self.pageData.count : \(self.pageData.count)")
+            //print("index in function + \(index) , self.pageData.count : \(self.pageData.count)")
             return nil
         }
         return self.viewControllerAtIndex(index, storyboard: viewController.storyboard!)

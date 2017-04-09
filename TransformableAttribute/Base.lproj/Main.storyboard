@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -121,11 +123,11 @@
                                 <rect key="frame" x="0.0" y="22" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Arm-wq-HPj">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -183,19 +185,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xsi-Us-gjm">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="20" y="50" width="335" height="575"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.29351693374509102" blue="0.18236978718371755" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="xsi-Us-gjm" firstAttribute="leading" secondItem="mG5-hI-scA" secondAttribute="leading" id="3t3-Z4-LEi"/>
-                            <constraint firstAttribute="bottom" secondItem="xsi-Us-gjm" secondAttribute="bottom" id="FUl-70-0rF"/>
-                            <constraint firstItem="xsi-Us-gjm" firstAttribute="top" secondItem="mG5-hI-scA" secondAttribute="top" id="In7-Rc-xVk"/>
-                            <constraint firstAttribute="trailing" secondItem="xsi-Us-gjm" secondAttribute="trailing" id="cpV-rm-cqz"/>
+                            <constraint firstItem="xsi-Us-gjm" firstAttribute="leading" secondItem="mG5-hI-scA" secondAttribute="leading" constant="20" id="3t3-Z4-LEi"/>
+                            <constraint firstAttribute="bottom" secondItem="xsi-Us-gjm" secondAttribute="bottomMargin" constant="50" id="FUl-70-0rF"/>
+                            <constraint firstItem="xsi-Us-gjm" firstAttribute="top" secondItem="mG5-hI-scA" secondAttribute="topMargin" constant="50" id="In7-Rc-xVk"/>
+                            <constraint firstAttribute="trailing" secondItem="xsi-Us-gjm" secondAttribute="trailing" constant="20" id="cpV-rm-cqz"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="uiImageView" destination="xsi-Us-gjm" id="NAe-4D-o8B"/>
+                        <outlet property="uiView" destination="mG5-hI-scA" id="PNi-F4-LQC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5T-yB-lfo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -231,6 +234,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhH-qF-xOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1178.4000000000001" y="964.76761619190415"/>
+        </scene>
+        <!--Page3 View Controller-->
+        <scene sceneID="G0U-jG-qXL">
+            <objects>
+                <viewController storyboardIdentifier="Page3ViewController" id="e6m-tr-Ac9" customClass="Page3ViewController" customModule="TransformableAttribute" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9kp-3F-AiV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ae5-5Q-IvG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gBC-TW-AsF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5KN-Sk-vJJ" customClass="Page3View" customModule="TransformableAttribute" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5KN-Sk-vJJ" firstAttribute="bottomMargin" secondItem="Ae5-5Q-IvG" secondAttribute="top" id="GuR-Fz-B2z"/>
+                            <constraint firstItem="5KN-Sk-vJJ" firstAttribute="top" secondItem="9kp-3F-AiV" secondAttribute="bottom" constant="8" symbolic="YES" id="Sno-MC-TBs"/>
+                            <constraint firstAttribute="trailing" secondItem="5KN-Sk-vJJ" secondAttribute="trailing" id="gLh-6k-E1C"/>
+                            <constraint firstItem="5KN-Sk-vJJ" firstAttribute="leading" secondItem="gBC-TW-AsF" secondAttribute="leading" id="zfn-BP-uVK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gameView" destination="5KN-Sk-vJJ" id="eBN-pc-dxV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xaC-vW-dua" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-399.19999999999999" y="1320.9895052473764"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">

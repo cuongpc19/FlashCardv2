@@ -27,7 +27,7 @@ class ModelController: NSObject {
         // Create a new view controller and pass suitable data.
         let identifierController : String
         
-        identifierController = NamePageViewController.page1.rawValue
+        identifierController = NamePageViewController.page3.rawValue
         let dataViewController = storyboard.instantiateViewController(withIdentifier: identifierController) as! DataViewController
         dataViewController.dataObject = (self.eventData[index].timestamp?.description)!
         if let photo = eventData[index].photo {

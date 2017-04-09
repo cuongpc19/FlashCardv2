@@ -10,4 +10,5 @@ import UIKit
 enum NamePageViewController:String {
     case page1 = "Page1ViewController"
     case page2 = "Page2ViewController"
+    case page3 = "Page3ViewController"
 }

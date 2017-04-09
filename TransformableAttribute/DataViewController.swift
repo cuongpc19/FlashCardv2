@@ -7,11 +7,13 @@
 //
 
 import UIKit
-
+import AVFoundation
 class DataViewController: UIViewController {
     var dataObject : String = ""
     var dataImage : UIImage?
     var dataRecord : Record?
+    var audioPlayer:AVAudioPlayer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,6 +21,17 @@ class DataViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }   
+    }
+    func playRecord() {
+        if dataRecord != nil {
+            if let dataAudio = dataRecord?.record {
+                //nsdata -> audio
+                do {
+                    audioPlayer = try AVAudioPlayer(data: dataAudio as! Data ) as AVAudioPlayer
+                    audioPlayer?.play()
+                } catch {}
+            }
+        }
+    }
     
 }
