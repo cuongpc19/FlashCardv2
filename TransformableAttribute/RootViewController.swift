@@ -59,6 +59,9 @@ class RootViewController: UIViewController {
     // MARK: - UIPageViewController delegate methods
     
     
+    @IBAction func onClickMenu(_ sender: Any) {
+        NotificationCenter.default.post(name: NotificationKey.key, object: nil)
+    }
     
     
 }

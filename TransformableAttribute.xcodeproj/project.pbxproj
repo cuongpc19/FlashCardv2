@@ -22,6 +22,7 @@
 		449B459A1E9A491000EF6ADF /* Page3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B45981E9A491000EF6ADF /* Page3ViewController.swift */; };
 		449B459C1E9A498400EF6ADF /* FallingObjectBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B459B1E9A498400EF6ADF /* FallingObjectBehavior.swift */; };
 		449B459E1E9A49D500EF6ADF /* UIKitExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B459D1E9A49D500EF6ADF /* UIKitExtention.swift */; };
+		449B45A01E9A4D5500EF6ADF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B459F1E9A4D5500EF6ADF /* MainViewController.swift */; };
 		44A6D6561E72242F0057D3F2 /* ExtentionAV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A6D6551E72242F0057D3F2 /* ExtentionAV.swift */; };
 		44FB01CD1E694C5800F82D90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FB01CC1E694C5800F82D90 /* AppDelegate.swift */; };
 		44FB01D01E694C5800F82D90 /* TransformableAttribute.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44FB01CE1E694C5800F82D90 /* TransformableAttribute.xcdatamodeld */; };
@@ -63,6 +64,7 @@
 		449B45981E9A491000EF6ADF /* Page3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page3ViewController.swift; sourceTree = "<group>"; };
 		449B459B1E9A498400EF6ADF /* FallingObjectBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingObjectBehavior.swift; sourceTree = "<group>"; };
 		449B459D1E9A49D500EF6ADF /* UIKitExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtention.swift; sourceTree = "<group>"; };
+		449B459F1E9A4D5500EF6ADF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
 		44A6D6551E72242F0057D3F2 /* ExtentionAV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtentionAV.swift; sourceTree = "<group>"; };
 		44FB01C91E694C5800F82D90 /* TransformableAttribute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransformableAttribute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FB01CC1E694C5800F82D90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,16 @@
 			name = "Play Event";
 			sourceTree = "<group>";
 		};
+		449B45A11E9A4D7000EF6ADF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44FB01CC1E694C5800F82D90 /* AppDelegate.swift */,
+				44FB01DA1E694C5800F82D90 /* LaunchScreen.storyboard */,
+				44FB01DD1E694C5800F82D90 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		44FB01C01E694C5800F82D90 = {
 			isa = PBXGroup;
 			children = (
@@ -157,13 +169,12 @@
 		44FB01CB1E694C5800F82D90 /* TransformableAttribute */ = {
 			isa = PBXGroup;
 			children = (
-				44FB01CC1E694C5800F82D90 /* AppDelegate.swift */,
+				449B45A11E9A4D7000EF6ADF /* Supporting Files */,
 				44265BDF1E792570004A4FF6 /* Play Event */,
 				44265BDE1E79253A004A4FF6 /* Add Event */,
 				44FB01D51E694C5800F82D90 /* Main.storyboard */,
+				449B459F1E9A4D5500EF6ADF /* MainViewController.swift */,
 				44FB01D81E694C5800F82D90 /* Assets.xcassets */,
-				44FB01DA1E694C5800F82D90 /* LaunchScreen.storyboard */,
-				44FB01DD1E694C5800F82D90 /* Info.plist */,
 				44FB01CE1E694C5800F82D90 /* TransformableAttribute.xcdatamodeld */,
 			);
 			path = TransformableAttribute;
@@ -297,6 +308,7 @@
 				44265BE91E79275F004A4FF6 /* ModelController.swift in Sources */,
 				44A6D6561E72242F0057D3F2 /* ExtentionAV.swift in Sources */,
 				44265BED1E7927A1004A4FF6 /* extentionPageViewDelegate.swift in Sources */,
+				449B45A01E9A4D5500EF6ADF /* MainViewController.swift in Sources */,
 				44FB01D01E694C5800F82D90 /* TransformableAttribute.xcdatamodeld in Sources */,
 				44265BE31E7926BA004A4FF6 /* DataViewController.swift in Sources */,
 				44FB01D21E694C5800F82D90 /* MasterViewController.swift in Sources */,
