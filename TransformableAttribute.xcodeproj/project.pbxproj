@@ -18,6 +18,10 @@
 		443859741E7619CF00A18519 /* Record+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443859721E7619CF00A18519 /* Record+CoreDataClass.swift */; };
 		443859751E7619CF00A18519 /* Record+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443859731E7619CF00A18519 /* Record+CoreDataProperties.swift */; };
 		443859B91E77EF6A00A18519 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443859B81E77EF6A00A18519 /* CoreDataStack.swift */; };
+		449B45991E9A491000EF6ADF /* Page3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B45971E9A491000EF6ADF /* Page3View.swift */; };
+		449B459A1E9A491000EF6ADF /* Page3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B45981E9A491000EF6ADF /* Page3ViewController.swift */; };
+		449B459C1E9A498400EF6ADF /* FallingObjectBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B459B1E9A498400EF6ADF /* FallingObjectBehavior.swift */; };
+		449B459E1E9A49D500EF6ADF /* UIKitExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449B459D1E9A49D500EF6ADF /* UIKitExtention.swift */; };
 		44A6D6561E72242F0057D3F2 /* ExtentionAV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A6D6551E72242F0057D3F2 /* ExtentionAV.swift */; };
 		44FB01CD1E694C5800F82D90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FB01CC1E694C5800F82D90 /* AppDelegate.swift */; };
 		44FB01D01E694C5800F82D90 /* TransformableAttribute.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44FB01CE1E694C5800F82D90 /* TransformableAttribute.xcdatamodeld */; };
@@ -55,6 +59,10 @@
 		443859721E7619CF00A18519 /* Record+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Record+CoreDataClass.swift"; sourceTree = "<group>"; };
 		443859731E7619CF00A18519 /* Record+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Record+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		443859B81E77EF6A00A18519 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		449B45971E9A491000EF6ADF /* Page3View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page3View.swift; sourceTree = "<group>"; };
+		449B45981E9A491000EF6ADF /* Page3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page3ViewController.swift; sourceTree = "<group>"; };
+		449B459B1E9A498400EF6ADF /* FallingObjectBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingObjectBehavior.swift; sourceTree = "<group>"; };
+		449B459D1E9A49D500EF6ADF /* UIKitExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtention.swift; sourceTree = "<group>"; };
 		44A6D6551E72242F0057D3F2 /* ExtentionAV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtentionAV.swift; sourceTree = "<group>"; };
 		44FB01C91E694C5800F82D90 /* TransformableAttribute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransformableAttribute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FB01CC1E694C5800F82D90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,7 +116,11 @@
 			children = (
 				44265BE01E79267B004A4FF6 /* RootViewController.swift */,
 				44265BE21E7926BA004A4FF6 /* DataViewController.swift */,
+				449B459B1E9A498400EF6ADF /* FallingObjectBehavior.swift */,
 				44265BE41E7926E9004A4FF6 /* Page1ViewController.swift */,
+				449B45971E9A491000EF6ADF /* Page3View.swift */,
+				449B45981E9A491000EF6ADF /* Page3ViewController.swift */,
+				449B459D1E9A49D500EF6ADF /* UIKitExtention.swift */,
 				44265BE61E79273F004A4FF6 /* Page2ViewController.swift */,
 				44265BE81E79275F004A4FF6 /* ModelController.swift */,
 				44265BEA1E792783004A4FF6 /* NamePageViewController.swift */,
@@ -274,6 +286,8 @@
 				44265BEF1E7927BD004A4FF6 /* extensionPageViewDataSource.swift in Sources */,
 				44FB01FE1E6965AD00F82D90 /* Photo+CoreDataProperties.swift in Sources */,
 				44FB01FF1E6965AD00F82D90 /* Event+CoreDataClass.swift in Sources */,
+				449B459E1E9A49D500EF6ADF /* UIKitExtention.swift in Sources */,
+				449B459A1E9A491000EF6ADF /* Page3ViewController.swift in Sources */,
 				44265BE71E79273F004A4FF6 /* Page2ViewController.swift in Sources */,
 				44FB01FD1E6965AD00F82D90 /* Photo+CoreDataClass.swift in Sources */,
 				443859B91E77EF6A00A18519 /* CoreDataStack.swift in Sources */,
@@ -287,8 +301,10 @@
 				44265BE31E7926BA004A4FF6 /* DataViewController.swift in Sources */,
 				44FB01D21E694C5800F82D90 /* MasterViewController.swift in Sources */,
 				44FB02001E6965AD00F82D90 /* Event+CoreDataProperties.swift in Sources */,
+				449B459C1E9A498400EF6ADF /* FallingObjectBehavior.swift in Sources */,
 				443859751E7619CF00A18519 /* Record+CoreDataProperties.swift in Sources */,
 				443859741E7619CF00A18519 /* Record+CoreDataClass.swift in Sources */,
+				449B45991E9A491000EF6ADF /* Page3View.swift in Sources */,
 				44265BEB1E792783004A4FF6 /* NamePageViewController.swift in Sources */,
 				44FB01D41E694C5800F82D90 /* DetailViewController.swift in Sources */,
 			);
