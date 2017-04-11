@@ -59,7 +59,7 @@ class DetailViewController: UIViewController, UIImagePickerControllerDelegate, U
     }
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad()        
         playRecordButton.isEnabled = false
         self.configureViewAndRecord()
         recordAudio()
